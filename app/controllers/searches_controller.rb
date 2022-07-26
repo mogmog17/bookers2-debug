@@ -8,5 +8,6 @@ before_action :authenticate_user!
     else
       @books = Book.looks(params[:search], params[:word])
     end
+    @word = params[:word]
   end
 end
