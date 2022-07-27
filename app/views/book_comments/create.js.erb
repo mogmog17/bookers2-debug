@@ -1,3 +1,3 @@
-$(."index").html("<%= j(render"book_comments/index", book: @book) %>");
-$(."form").html("<%= j(render"book_comments/form", book: @book, book_comment: @book_comment) %>");
-$(."form").val("");
+$(".comments-count").html("<%= j(render 'book_comments/counter', book: @book) %>");
+$(".book-comments-index").html("<%= j(render 'book_comments/index', book: @book) %>");
+$(".comment-text_area").val("");
