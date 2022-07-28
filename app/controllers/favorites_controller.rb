@@ -1,3 +1,5 @@
+# いいね機能のコントローラ
+
 class FavoritesController < ApplicationController
 
   def create
